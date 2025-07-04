@@ -16,8 +16,7 @@ export default function RsvpForm() {
         setIsLoading(true);
 
         const rsvpData = { name, phone, attendance, group, message };
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL; // Your Django API endpoint
-
+        const apiUrl = '/api/rsvp';
         try {
             const response = await fetch(apiUrl, {
                 method: 'POST',
