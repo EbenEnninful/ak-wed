@@ -62,11 +62,11 @@ export default function RsvpForm() {
                     <div className="flex items-center space-x-6">
                         <label className="inline-flex items-center">
                             <input type="radio" name="attendance" value="yes" checked={attendance === 'yes'} onChange={(e) => setAttendance(e.target.value)} className="form-radio h-4 w-4 text-pink-600" />
-                            <span className="ml-2 text-gray-700">Yes, with pleasure!</span>
+                            <span className="ml-2 text-gray-700">Yes</span>
                         </label>
                         <label className="inline-flex items-center">
                             <input type="radio" name="attendance" value="no" checked={attendance === 'no'} onChange={(e) => setAttendance(e.target.value)} className="form-radio h-4 w-4 text-pink-600" />
-                            <span className="ml-2 text-gray-700">Regrettably, no.</span>
+                            <span className="ml-2 text-gray-700"> no </span>
                         </label>
                     </div>
                 </div>
