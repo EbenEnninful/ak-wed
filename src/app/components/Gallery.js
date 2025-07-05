@@ -18,6 +18,28 @@ export default function Gallery() {
                     className="w-full max-w-lg h-auto rounded-lg shadow-lg"
                 />
             </div>
+
+            <div className="flex justify-center">
+                {/* 2. Use the Image component instead of <img> */}
+                <Image 
+                    src="/23.jpeg" 
+                    alt="A descriptive caption for the photo" 
+                    width={500}  // 3. Add the actual width of your image
+                    height={300} // 4. Add the actual height of your image
+                    className="w-full max-w-lg h-auto rounded-lg shadow-lg"
+                />
+            </div>
+
+            <div className="flex justify-center">
+                {/* 2. Use the Image component instead of <img> */}
+                <Image 
+                    src="/24.jpeg" 
+                    alt="A descriptive caption for the photo" 
+                    width={500}  // 3. Add the actual width of your image
+                    height={300} // 4. Add the actual height of your image
+                    className="w-full max-w-lg h-auto rounded-lg shadow-lg"
+                />
+            </div>
         </div>
     );
 }
