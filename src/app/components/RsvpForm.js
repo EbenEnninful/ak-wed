@@ -71,7 +71,15 @@ export default function RsvpForm() {
                     </div>
                 </div>
 
-  
+                export default function YourComponentName() {
+    return (
+        <div>
+            <h1>HELLO, I AM EDITING THIS FILE</h1> // <-- ADD THIS LINE
+            
+            {/* The rest of your component code... */}
+        </div>
+    );
+}
                 
                 {/* Optional Message */}
                 <div>
