@@ -36,7 +36,7 @@ export default function Countdown({ weddingDate }) {
                 <p className="text-2xl font-semibold text-pink-800">The wedding has begun!</p>
             ) : (
                 <>
-                    <p className="text-2xl font-semibold text-pink-900 mb-2">Count down!</p>
+                    <p className="text-2xl font-bold text-pink-700 mb-2">Count down!</p>
                     <div className="flex justify-center space-x-4 text-gray-800 font-medium">
                         {Object.entries(timeRemaining).map(([unit, value]) => (
                             <div key={unit} className="text-center">
@@ -50,3 +50,4 @@ export default function Countdown({ weddingDate }) {
         </div>
     );
 }
+

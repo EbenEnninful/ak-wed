@@ -20,9 +20,20 @@ export default function Home() {
                 </div>
 
                 <Countdown weddingDate={weddingDate} />
+
+                
                 <RsvpForm />
+
+
+
                 <Gallery />
+
+
+
                 <Map />
+
+
+
                 <Footer />
             </div>
         </div>
