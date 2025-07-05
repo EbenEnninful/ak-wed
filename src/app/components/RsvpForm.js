@@ -71,19 +71,7 @@ export default function RsvpForm() {
                     </div>
                 </div>
 
-                {false && (
-  <div className="mb-2">
-    <label className="block text-sm font-medium text-gray-700 mb-2">Which group are you with?</label>
-    <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-      {['EWC', 'UCC', 'GWL', 'OTHERS'].map((groupName) => (
-        <label key={groupName} className="inline-flex items-center">
-          <input type="radio" name="group" value={groupName} checked={group === groupName} />
-          <span className="ml-2 text-gray-700">{groupName}</span>
-        </label>
-      ))}
-    </div>
-  </div>
-)}
+  
                 
                 {/* Optional Message */}
                 <div>
