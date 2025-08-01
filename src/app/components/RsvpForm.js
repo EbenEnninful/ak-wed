@@ -1,47 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function RsvpForm() {
-    const [name, setName] = useState('');
-    const [phone, setPhone] = useState('');
-    const [attendance, setAttendance] = useState('yes');
-    const [group, setGroup] = useState('EWC');
-    const [message, setMessage] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
-    const [messageBox, setMessageBox] = useState({ show: false, text: '' });
-
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        setIsLoading(true);
-
-        const rsvpData = { name, phone, attendance, group, message };
-        const apiUrl = '/api/rsvp';
-        try {
-            const response = await fetch(apiUrl, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(rsvpData),
-            });
-
-            if (response.ok) {
-                setMessageBox({ show: true, text: `Thank you, ${name}! Your RSVP has been submitted.` });
-                // Clear form
-                setName('');
-                setPhone('');
-                setAttendance('yes');
-                setGroup('EWC');
-                setMessage('');
-            } else {
-                const errorData = await response.json();
-                setMessageBox({ show: true, text: `Submission failed: ${errorData.message || 'Unknown error'}` });
-            }
-        } catch (error) {
-            setMessageBox({ show: true, text: `Network error: ${error.message}` });
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-   
+    return (
+        <div className="text-center p-8 bg-white rounded-lg shadow-xl">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">RSVP Is Now Closed</h2>
+            <p className="text-gray-600">Thank you to everyone who submitted their RSVP. We can't wait to celebrate with you!</p>
+        </div>
+    );
 }
