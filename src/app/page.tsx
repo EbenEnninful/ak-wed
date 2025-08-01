@@ -22,7 +22,7 @@ export default function Home() {
                 <Countdown weddingDate={weddingDate} />
 
                 
-                <RsvpForm />
+               
 
 
 
