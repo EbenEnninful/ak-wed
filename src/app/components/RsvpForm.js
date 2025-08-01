@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 
 export default function RsvpForm() {
     const [name, setName] = useState('');
@@ -13,7 +13,7 @@ export default function RsvpForm() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        setIsLoading(true);
+        setIsLoading(true);//
 
         const rsvpData = { name, phone, attendance, group, message };
         const apiUrl = '/api/rsvp';
@@ -96,4 +96,4 @@ export default function RsvpForm() {
             )}
         </>
     );
-}
+/*}
