@@ -45,13 +45,14 @@ export default function Gallery() {
   };
   
   // --- Auto-play Functionality ---
- useEffect(() => {
+  useEffect(() => {
     // Set an interval to advance the slide every 5 seconds
     const autoPlayInterval = setInterval(goToNext, 5000);
     
-    // Clear the interval when the component unmounts or the dependencies change
+    // Clear the interval when the component unmounts or the index changes
     return () => clearInterval(autoPlayInterval);
-}, [currentIndex, goToNext]); // The effect re-runs if currentIndex or goToNext changes
+  }, [currentIndex]); // The effect re-runs if currentIndex changes
+
   return (
     <div className="text-center space-y-4 mt-8">
       {/* This title can be whatever you prefer */}

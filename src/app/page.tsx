@@ -1,6 +1,6 @@
 import React from 'react';
 import Countdown from './components/Countdown';
-import RsvpForm from './components/RsvpForm';
+
 import Gallery from './components/Gallery';
 import Map from './components/Map';
 import Footer from './components/Footer';
@@ -23,8 +23,8 @@ export default function Home() {
 
                 
                
-            <RsvpForm />
 
+               
 
                 <Gallery />
 
